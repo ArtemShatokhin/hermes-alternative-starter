@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=https://kortix.com/schema/kortix.v2.schema.json
+# Kortix is open source. Read it, fork it, audit it.
+# This is a copy-and-run starter: one agent, one skill, one cron trigger.
+kortix_version: 2
+default_agent: starter
+
+project:
+  name: my-company
+  description: What this project is.
+
+agents:
+  starter:
+    file: agents/starter.md
+    connectors: all
+    skills: all
+    secrets: all
+    kortix_permissions: all
+
+triggers:
+  - slug: weekly-digest
+    name: Weekly digest
+    type: cron
+    agent: starter
+    enabled: true
+    cron: 0 9 * * 1
+    timezone: UTC
+    prompt: |-
+      Read the last week of commits and change requests in this project,
+      write the digest in the team's format, and open a change request with it.
