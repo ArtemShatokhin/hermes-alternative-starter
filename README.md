@@ -50,6 +50,8 @@ Run it on Kortix Cloud, in your VPC, or on your own on-prem network. Self-host i
 - [Getting started](docs/getting-started.md) walks the three commands and the agent and skill in this repo.
 - [Kortix vs Hermes Agent](docs/kortix-vs-hermes.md) compares the two from Hermes' own repository and docs, and gives the decision.
 - [Self-hosting](docs/self-hosting.md) runs the stack on your own box, and lists the trade-offs.
+- [How to install Hermes Agent](https://hermesalternative.com/how-to-install-hermes-agent) covers the personal-agent install this starter replaces, from Hermes' own docs.
+- [Self-hosting a Hermes alternative](https://hermesalternative.com/self-hosting-hermes-alternative) is the browser version of the stack in this repo, one Docker Compose file.
 - [Kortix on GitHub](https://github.com/kortix-ai/suna) is the platform source.
 
 Kortix is open source. Read it, fork it, audit it.
